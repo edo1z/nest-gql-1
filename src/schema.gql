@@ -3,8 +3,9 @@
 # ------------------------------------------------------
 
 input CreateUserInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  active: Boolean!
+  age: Int
+  name: String!
 }
 
 type Mutation {
@@ -19,12 +20,15 @@ type Query {
 }
 
 input UpdateUserInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+  active: Boolean
+  age: Int
   id: Int!
+  name: String
 }
 
 type User {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  active: Boolean!
+  age: Int
+  id: Int!
+  name: String!
 }
